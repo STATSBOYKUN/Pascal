@@ -1,0 +1,177 @@
+//program 1
+// program Contoh_awal;
+
+// begin
+//    writeln('Saya Pascal');
+//    writeln('Saya baru kenal');
+// end.
+
+//program 2
+// program Tampil;
+
+// var
+//    nama:string[10];
+
+// begin
+//    nama := 'Nina';
+//    write('Nama : ', nama);
+// end.
+
+//program 3
+// program tipe_byte;
+
+// var
+//    jumlah:byte;
+
+// begin
+//    jumlah := 200;
+//    writeln('Nilai jumlah : ', jumlah);
+// end.
+
+//program 4
+// program SistemBilBulat;
+
+// uses crt;
+
+// var
+//    a,b,c:byte;
+//    d,e,f:byte; //short integer tidak bisa menampung variabel f
+
+// begin
+//    clrscr;
+//    a:=200; 
+//    b:=55;
+//    c:=a+b;
+
+//    writeln('Tipe data Byte');
+//    writeln(' ',a,' + ',b,' = ',c);
+//    writeln;
+
+//    d:=125;
+//    e:=5;
+//    f:=d+e;
+
+//    writeln(' ',d,' + ',e,' = ',f);
+//    readkey;
+// end.
+
+//program 5
+// program Luas_Segi_Tiga;
+
+// var
+//    luas :real;
+//    alas,tinggi :byte;
+
+// begin
+//    alas := 5;
+//    tinggi := 10;
+
+//    luas := 0.5 * alas * tinggi;
+//    writeln('Alas = ', alas);
+//    writeln('Tinggi = ', tinggi);
+//    writeln('Luas = ', luas:5:2);
+// end.
+
+//program 6
+// program tipe_real;
+// uses crt;
+
+// var
+//         a:real;
+//         b:single;
+//         c:double;
+//         d:extended;
+//         e:comp;
+
+// begin
+//         clrscr;
+//         a:=123456.31;
+//         b:=123456.31;
+//         c:=123456.31;
+//         d:=123456.31;
+//         e:=123456.31;
+
+//         writeln('a : ', a);
+//         writeln('b : ', b);
+//         writeln('c : ', c);
+//         writeln('d : ', d);
+//         writeln('e : ', e);
+
+//         readkey;
+// end.
+
+//program 7
+// program operator_not;
+
+// uses crt;
+
+// var
+//    a : boolean;
+
+// begin
+//    clrscr;
+   
+//    a:= false;
+//    a:= not a;
+
+//    writeln(a);
+
+//    readln;
+// end.
+
+//program 8
+// program operator_and;
+
+// uses crt;
+
+// begin
+//    clrscr;
+
+//    writeln('TRUE and TRUE = ', true and true);
+//    writeln('TRUE and FALSE = ', true and false);
+//    writeln('FALSE and TRUE = ', false and true);
+//    writeln('FALSE and FALSE = ', false and false);
+// end.
+
+//program 9
+// program waktu;
+
+// var
+//    tanggal : string[10];
+//    hari : string[6];
+//    pasaran : string[6];
+
+// begin
+//    tanggal := '26-12-2005';
+//    hari := 'Senin';
+//    pasaran := 'Pahing';
+
+//    writeln(tanggal, ', ', hari, ' ', pasaran);
+// end.
+
+//program 10
+// program tipe_boolean;
+
+// var
+//    lagi : boolean;
+
+// begin
+//    lagi := true;
+
+//    writeln('Nilai lagi = ', lagi);
+// end.
+
+//program 11
+program tipe_pointer;
+
+type
+   tipeString = string[40];
+   pointerString =^ tipeString;
+
+var
+   letaknama : pointerString;
+
+begin
+   letaknama^ := 'Pascal';
+   writeln('Letak : ', letaknama^);
+end.

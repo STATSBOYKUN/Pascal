@@ -1,0 +1,1 @@
+writeln('nilai fib (', n, ') : ', fib(n));

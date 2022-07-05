@@ -1,0 +1,1 @@
+lama_peminjaman2 > 7

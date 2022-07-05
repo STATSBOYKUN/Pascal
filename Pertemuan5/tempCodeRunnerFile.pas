@@ -1,0 +1,2 @@
+
+   'E' : writeln ('Gagal') ;
